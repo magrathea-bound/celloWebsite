@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
 window.onload = function() {
     music = new Image();
     music.src = 'images/DSC09726.jpg';
+    celloEyes = new Image();
+    celloEyes.src = 'images/celloEye.png';
+    
+    
 }
 
 //Functions 
