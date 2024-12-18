@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+    background-image: url('images/DSC03771v1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    height: 100vh;
+    margin:0;
+    transition: background-image 15s ease-in-out;
+}
+
+.navbar-text a{
+    font-family: Tangerine;
+    color: #E8E8E8;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.navbar-text a:hover{
+    color: #820263;
+}
+
+.navbar-text a:visited{
+    color: #E8E8E8;
+}
+
+.navbar-text a:visited:hover{
+    color: #820263;
+}
+
+.navbar-toggler-icon{
+    background-image: url(images/bars-solid.svg);
+}
+
+#navbarBrand{
+    font-weight: 900;
+    font-size: 2em;
+    letter-spacing: .1em;
+}
+
+#navbar-main .active{
+    color: #820263;
+}
+
+.container-fluid .content-container{
+    margin-top: 8em;
+}
+
+#bio-container{
+    display: none;
+    margin-top: 8em;
+}
+
+#bio {
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 1em;
+    color:#E8E8E8;
+}
+
+#bio-container img{
+    width: 100%;
+}
+
+#music-container{
+    display: none;
+    margin-top: 8em;
+    /* background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 1em; */
+    color:#E8E8E8;
+}
+
+#music-container h1{
+    text-align: center;
+}
+
+#music-container .row{
+
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 1em;
+    width: 90%;
+}
+
+#music-container img{
+    width: 100%;
+}
+
+@media(max-width: 992px){
+    #bio-container{
+        margin-top: 0em;
+    }
+}
