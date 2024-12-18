@@ -84,6 +84,17 @@ body{
     width: 100%;
 }
 
+#contact-container{
+    display: none;
+    margin: 0.5em;
+    margin-top: 8em;
+}
+
+#contact-container img{
+    width: 50px;
+    margin: 10px;
+}
+
 @media(max-width: 992px){
     #bio-container{
         margin-top: 0em;

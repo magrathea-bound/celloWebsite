@@ -36,6 +36,7 @@ function switchContent(target){
     let textMap = new Map();
     textMap.set('navbar-about','bio-container');
     textMap.set('navbar-music','music-container');
+    textMap.set('navbar-contact', 'contact-container');
 
     //Remove current content (if exists) Add next content (if exists)
     if (textMap.has(active.id)) {
