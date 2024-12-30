@@ -11,16 +11,25 @@ window.addEventListener('scroll', function () {
 });
 
 // parallax scrolling function
+ //function isInViewport(element) {
+ //           const rect = element.getBoundingClientRect();
+ //           return (
+ //               rect.top >= 0 &&
+ //               rect.left >= 0 &&
+ //               rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+ //               rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+ //           );
+ //       }
 
 let parallaxImages = []
 parallaxImages.push(document.getElementById('main-image'));
-parallaxImages.push(document.getElementById('recording-image'));
+//parallaxImages.push(document.getElementById('recording-image'));
 
 window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY;
-
+    
     for (let parallaxImage of parallaxImages) {
-    parallaxImage.style.transform = `translateY(${scrollPosition * 0.3}px)`;
+        parallaxImage.style.transform = `translateY(${scrollPosition * 0.3}px)`;
 }
 });
 
