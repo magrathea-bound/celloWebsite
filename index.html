@@ -26,13 +26,13 @@
                 <a class="nav-link" href="#" data-image='images/DSC03771v1.jpg' id="navbar-home">Home</a>
                 </li>
                 <li class="nav-item" data-image="">
-                <a class="nav-link" href="#" id="navbar-about">About</a>
+                <a class="nav-link" href="#bio-container" id="navbar-about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#" data-image="images/DSC09726.jpg" id="navbar-music">Music</a>
+                <a class="nav-link" href="#music-section" data-image="images/DSC09726.jpg" id="navbar-music">Music</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#" data-image="images/celloEye.png" id="navbar-contact">Contact</a>
+                <a class="nav-link" href="#contact-section" data-image="images/celloEye.png" id="navbar-contact">Contact</a>
                 </li>
             </ul>
             </div>
@@ -45,7 +45,7 @@
 
 
     <div class="container-fluid my-3 p-0" id="bio-container">
-        <div class="row my-5 text-center blurb-bg">
+        <div class="row my-5 text-center  header-blurb-bg">
                 <h1 class="section-header">About Dr. Kralik</h1>
         </div>
         <div class="row my-3 justify-content-around" id="bio-row">
@@ -96,8 +96,7 @@
         <div class="parallax-image" id="recording-image"></div>
     </section>
 
-        <div class="blurb-bg"><h1 class="section-header">Music</h1></div>
-
+        <div class="header-blurb-bg my-5" id="music-section"><h1 class="section-header">Music</h1></div>
         <div class="blurb-bg" id="spotify-player">
                 <!--Remove &theme=0 in source for red theme-->
             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/4lJ0leiTzz8GPbevDUCvwU?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -151,11 +150,11 @@
         </div>
     </div>
 
-    <div class="blurb-bg">
-            <h1 class="section-header">Contact</h1>
+    <div class="header-blurb-bg" id="contact-section">
+            <h1 class="section-header my-5">Contact</h1>
     </div>
-    <div class="container-fluid py-5" id="contact-container">
-        <div class="row mx-5 d-flex justify-content-end align-items-center">
+    <div class="container-fluid d-flex align-items-center justify-content-end py-5" id="contact-container">
+        <div class="row mx-5 px-5 d-flex justify-content-end align-items-center">
             <div class="col-4 d-flex justify-content-center align-items-center">
                 <a href="mailto:christine.kralik@yahoo.com">
                 <img src="images/envelope.svg" alt="Email Link">
@@ -165,9 +164,6 @@
                 </a>
                 <a href="https://www.linkedin.com/in/dr-christine-kralik-72948ba2/">
                     <img src="images/linkedin.svg" alt="Linked In Link">
-                </a>
-                <a href="https://open.spotify.com/artist/4lJ0leiTzz8GPbevDUCvwU">
-                    <img src="images/spotify.svg" alt="Spotify Link">
                 </a>
             </div>
         </div>
