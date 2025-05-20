@@ -1,12 +1,12 @@
 
-// Navbar fill in when scrolling down
-const navbar = document.getElementById('navbar');
+// navbar fill in when scrolling down
+const navbar = document.getelementbyid('navbar');
 
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 500) {  
-    navbar.classList.add('scrolled');
+window.addeventlistener('scroll', function () {
+  if (window.scrolly > 500) {  
+    navbar.classlist.add('scrolled');
   } else {
-    navbar.classList.remove('scrolled');
+    navbar.classlist.remove('scrolled');
   }
 });
 
