@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root {
+}
+
+@theme {
+  --font-secondary: "Tangerine", sans-serif;
+  --color-primary: #e8e8e8;
+  --color-secondary: #420039;
+  --color-tertiary: #353535;
+  --color-bg: #1c1c1c;
+}
