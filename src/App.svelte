@@ -71,16 +71,16 @@ import Pandora from "/src/assets/pandora-svgrepo-com.svg"
     </div>
   </div>
 
-  <div class="fixed right-0 top-1/4 flex flex-col items-center space-y-3 translate-x-80">
+  <div class="fixed right-0 top-1/4 flex flex-col items-center space-y-3 w-1/10">
     <h1 class="font-secondary text-white text-4xl underline mb-5">Listen</h1>
 <img src={Spotify} alt="Spotify Icon"
-    class="w-1/18">
+    class="w-1/3">
 <img src={Itunes} alt="Itunes Icon"
-    class="w-1/18">
+    class="w-1/3">
 <img src={Amazon} alt="Amazon Music Icon"
-    class="w-1/18">
+    class="w-1/3">
 <img src={Pandora} alt="Pandora Icon"
-    class="w-1/18">
+    class="w-1/3">
   </div>
 
 </main>

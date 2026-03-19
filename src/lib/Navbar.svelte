@@ -1,8 +1,10 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
+  import Signature from "/src/assets/Signture White v1.png"
 
   let scrollY = $state(0);
   const threshold = 500;
+  
 
   let showNavbar = $derived(scrollY > threshold);
 </script>
@@ -13,7 +15,7 @@
   class="w-screen h-1/9 bg-secondary fixed text-light-text flex justify-between z-10 text-secondary {showNavbar ? 'bg-secondary' : 'bg-secondary/0'} transition-colors duration-500">
   <a href="#top" class="ml-10 h-full items-center flex">
     <img
-      src="/src/assets/Signture White v1.png"
+      src={Signature}
       alt="Christine's Signature"
       class="h-1/2"
     />
