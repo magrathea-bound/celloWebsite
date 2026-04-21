@@ -12,7 +12,7 @@
 <svelte:window bind:scrollY />
 
 <nav
-  class="w-screen h-1/9 bg-secondary fixed text-light-text flex justify-between z-10 text-secondary {showNavbar ? 'bg-secondary' : 'bg-secondary/0'} transition-colors duration-500">
+  class="w-screen px-8 h-28 bg-secondary fixed text-light-text flex justify-between z-10 text-secondary {showNavbar ? 'bg-secondary' : 'bg-secondary/0'} transition-colors duration-500">
   <a href="#top" class="ml-10 h-full items-center flex">
     <img
       src={Signature}
