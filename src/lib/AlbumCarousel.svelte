@@ -73,17 +73,17 @@ function indexPrevious(){
 }
 </script>
 
-<div class="w-full flex space-x-20 text-white">
-  <div class="mx-auto lg:w-1/2 items-center flex">
+<div class="w-full flex flex-col md:flex-row space-x-20 space-y-10 text-white justify-around">
+  <div class="mx-auto md:mx-0 md:w-1/2 items-center flex">
 <img src={album.image} alt="The album cover for {album.title}" 
     class="w-full aspect-square">
 </div>
-    <div class="hidden lg:block lg:w-1/2 space-y-5">
+    <div class="w-full md:w-1/2 space-y-5">
           <h1 class="underline font-secondary text-5xl">{album.title}</h1>
     {@html album.about}
     </div>
 
-  <div class="mx-15 absolute inset-0 text-4xl text-center items-center justify-between flex pointer-events-none">
+  <div class="mx-2 md:mx-15 absolute inset-0 text-4xl text-center items-center justify-between flex pointer-events-none">
     <button class="bg-tertiary/45 rounded-full size-15 text-gray-400 hover:bg-secondary pointer-events-auto"
       onclick={indexNext}>&lt</button>
     <button class="bg-tertiary/45 rounded-full size-15 text-gray-400 hover:bg-secondary pointer-events-auto"

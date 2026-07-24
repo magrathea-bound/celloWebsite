@@ -22,10 +22,10 @@ function videoPrevious(){
     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/58h0UDUSjCM?si=_6Aa8ewcJAY0SQ0a&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   {/if}
 
-  <div class="mx-2 lg:mx-15 absolute inset-0 text-4xl text-center items-center justify-between flex pointer-events-none">
-    <button class="bg-tertiary/45 rounded-full size-10 lg:size-15 text-gray-400 hover:bg-secondary pointer-events-auto"
+  <div class="mx-2 md:mx-15 absolute inset-0 text-4xl text-center items-center justify-between flex pointer-events-none">
+    <button class="bg-tertiary/45 rounded-full size-10 md:size-15 text-gray-400 hover:bg-secondary pointer-events-auto"
       on:click={videoPrevious}>&lt</button>
-    <button class="bg-tertiary/45 rounded-full size-10 lg:size-15 text-gray-400 hover:bg-secondary pointer-events-auto"
+    <button class="bg-tertiary/45 rounded-full size-10 md:size-15 text-gray-400 hover:bg-secondary pointer-events-auto"
       on:click={videoNext}>&gt</button>
   </div>
 </div>

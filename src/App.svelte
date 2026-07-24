@@ -23,9 +23,9 @@ import Pandora from "/src/assets/pandora-svgrepo-com.svg"
   <ParallaxImage/>
   <HeaderBanner>About Dr. Kralik</HeaderBanner>
 
-  <div class="flex flex-col-reverse lg:flex-row lg:justify-around items-start my-10">
+  <div class="flex flex-col-reverse lg:flex-row lg:justify-around items-start my-0 md:my-10">
     <Bio/>
-    <div class="bg-[url(./assets/bioPhoto.jpg)] w-full h-100 my-10 lg:my-0 lg:h-screen lg:w-5/12 bg-center bg-contain bg-no-repeat"></div>
+    <div class="bg-[url(./assets/bioPhoto.jpg)] w-full h-100 my-10 md:h-200 lg:my-0 lg:h-screen lg:w-5/12 bg-center bg-contain bg-no-repeat"></div>
   </div>
 
   <div class="w-screen h-auto">
@@ -34,17 +34,17 @@ import Pandora from "/src/assets/pandora-svgrepo-com.svg"
 
   <HeaderBanner>Music</HeaderBanner>
 
-  <div class="lg:w-2/3 p-10 mx-auto bg-tertiary rounded-4xl my-10">
+  <div class="md:w-2/3 p-10 mx-auto bg-tertiary rounded-4xl my-10">
     <h1 class="text-center my-3 font-secondary text-7xl text-white underline">Listen Now</h1>
     <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4lJ0leiTzz8GPbevDUCvwU?utm_source=generator&theme=0" title="Spotify Player" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </div>
 
-  <div class="my-10 lg:w-2/3 p-10 bg-tertiary rounded-4xl mx-auto aspect-video relative ">
+  <div class="my-10 md:w-2/3 p-10 bg-tertiary rounded-4xl mx-auto aspect-video relative ">
     <h1 class="text-center my-3 font-secondary text-7xl text-white underline">Videos</h1>
     <VideoCarousel/>
   </div>
 
-  <div class="my-10 lg:w-2/3 p-10 bg-tertiary rounded-4xl mx-auto aspect-video relative ">
+  <div class="my-10 md:w-2/3 p-10 bg-tertiary rounded-4xl mx-auto aspect-video relative ">
     <h1 class="text-center my-3 font-secondary text-7xl text-white underline">Albums</h1>
     <AlbumCarousel/>
   </div>
@@ -71,7 +71,7 @@ import Pandora from "/src/assets/pandora-svgrepo-com.svg"
     </div>
   </div>
 
-  <div class="fixed right-0 top-1/4 flex flex-col items-center space-y-3 w-1/10">
+  <div class="md:fixed md:right-0 md:top-1/4 flex md:flex-col items-center space-y-3 w-full md:w-1/10">
     <h1 class="font-secondary text-white text-4xl underline mb-5">Listen</h1>
 <a href="https://open.spotify.com/artist/4lJ0leiTzz8GPbevDUCvwU?si=SdIezAiVQyyQ2UwqHOM-6Q" target="_blank"
 class="w-full mx-auto flex justify-center">
