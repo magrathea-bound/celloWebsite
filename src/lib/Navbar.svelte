@@ -12,8 +12,9 @@
 <svelte:window bind:scrollY />
 
 <nav
-  class="w-screen px-8 h-28 bg-secondary fixed text-light-text flex justify-between z-10 text-secondary {showNavbar ? 'bg-secondary' : 'bg-secondary/0'} transition-colors duration-500">
-  <a href="#top" class="ml-10 h-full items-center flex">
+  class="w-screen absolute  text-light-text flex justify-between z-10 text-secondary  transition-colors duration-500
+      lg:px-8 lg:h-28 lg:bg-secondary lg:fixed {showNavbar ? 'lg:bg-secondary' : 'lg:bg-secondary/0'}">
+  <a href="#top" class="lg:ml-10 h-full items-center flex">
     <img
       src={Signature}
       alt="Christine's Signature"
@@ -21,7 +22,7 @@
     />
   </a>
 
-  <div class="flex text-white items-center font-secondary font-bold h-full">
+  <div class="hidden lg:flex text-white items-center font-secondary font-bold h-full">
     <a class="hover:text-tertiary mr-4 text-4xl" href="#top">Home</a>
     <a class="hover:text-tertiary mr-4 text-4xl" href="#about">About</a>
     <a class="hover:text-tertiary mr-4 text-4xl" href="#music">Music</a>

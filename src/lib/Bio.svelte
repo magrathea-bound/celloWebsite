@@ -3,7 +3,7 @@ import {slide} from 'svelte/transition'
 let expanded: boolean = $state(false);
 </script>
 
-<div class="w-6/12 bg-tertiary text-white rounded-4xl p-4 items-center flex flex-col transition-all duration-500 ease-in-out">
+<div class="lg:w-6/12 bg-tertiary text-white rounded-4xl p-4 items-center flex flex-col transition-all duration-500 ease-in-out">
   <div class="space-y-5 my-5">
     <h1 class="text-white font-secondary text-7xl text-center p-2 underline align-middle">Bio</h1>
     <p>Dr. Christine Renée Kralik is the Assistant Professor of Cello, as the

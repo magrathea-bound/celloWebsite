@@ -74,11 +74,11 @@ function indexPrevious(){
 </script>
 
 <div class="w-full flex space-x-20 text-white">
-  <div class="w-1/2 items-center flex">
+  <div class="mx-auto lg:w-1/2 items-center flex">
 <img src={album.image} alt="The album cover for {album.title}" 
     class="w-full aspect-square">
 </div>
-    <div class="w-1/2 space-y-5">
+    <div class="hidden lg:block lg:w-1/2 space-y-5">
           <h1 class="underline font-secondary text-5xl">{album.title}</h1>
     {@html album.about}
     </div>
