@@ -78,7 +78,7 @@ function indexPrevious(){
 <img src={album.image} alt="The album cover for {album.title}" 
     class="w-full aspect-square">
 </div>
-    <div class="w-full md:w-1/2 space-y-5">
+    <div class="md:mx-10 w-full md:w-1/2 space-y-5">
           <h1 class="underline font-secondary text-5xl">{album.title}</h1>
     {@html album.about}
     </div>
