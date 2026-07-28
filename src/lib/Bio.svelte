@@ -1,6 +1,7 @@
 <script lang="ts">
 import {slide} from 'svelte/transition'
 import { onMount } from 'svelte';
+import { inViewport } from "./ViewPortAppear"
 
 let expanded: boolean = $state(false);
 let visible_count: number = $state(0);
@@ -135,13 +136,13 @@ onMount(() =>{
     <h1 class="text-white font-secondary text-7xl text-center p-2 underline align-middle">Bio</h1>
 
     {#each paragraphs.slice(0, visible_count) as paragraph}
-        <p>{paragraph}</p>
+        <p use:inViewport class="object-hidden-up">{paragraph}</p>
     {/each}
     
     {#if expanded}
-      <div transition:slide={{ duration:1000, axis:'y'}}>
+      <div transition:slide={{ duration:1000, axis:'y'}} class="space-y-5">
     {#each paragraphs.slice(visible_count) as paragraph}
-      <p>{paragraph}</p>
+      <p use:inViewport class="object-hidden-up">{paragraph}</p>
     {/each}
       </div>
     {/if}

@@ -10,3 +10,15 @@
   --color-tertiary: #353535;
   --color-bg: #1c1c1c;
 }
+
+.object-hidden-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1.0s ease-out;
+}
+
+.object-show {
+  opacity: 1;
+  transform: translateY(0);
+  transform: translateX(0);
+}

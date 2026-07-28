@@ -1,4 +1,6 @@
 <script lang="ts">
+import { inViewport } from "./ViewPortAppear"
+
 import ImpassionedCello from "/src/assets/impassionedCello.jpg" 
 import LyricalCello from "/src/assets/lyricalCelloAlbumCover.png" 
 import Halcyon from "/src/assets/halcyonSingle.jpg" 
@@ -76,7 +78,7 @@ function indexPrevious(){
 <div class="w-full flex flex-col md:flex-row space-x-20 space-y-10 text-white justify-around">
   <div class="mx-auto md:mx-0 md:w-1/2 items-center flex">
 <img src={album.image} alt="The album cover for {album.title}" 
-    class="w-full aspect-square">
+    class="w-full aspect-square rounded-xl border border-white shadow-black shadow-lg">
 </div>
     <div class="md:mx-10 w-full md:w-1/2 space-y-5">
           <h1 class="underline font-secondary text-5xl">{album.title}</h1>

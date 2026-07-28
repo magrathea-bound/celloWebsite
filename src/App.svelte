@@ -15,6 +15,7 @@ import Spotify from "/src/assets/spotify.svg"
 import Itunes from "/src/assets/itunes-brands-solid.svg"
 import Amazon from "/src/assets/amazon-music-svgrepo-com.svg"
 import Pandora from "/src/assets/pandora-svgrepo-com.svg"
+import { inViewport } from "./lib/ViewPortAppear"
 </script>
 
 <NotesParticles/>
@@ -23,9 +24,10 @@ import Pandora from "/src/assets/pandora-svgrepo-com.svg"
   <ParallaxImage/>
   <HeaderBanner>About Dr. Kralik</HeaderBanner>
 
-  <div class="flex flex-col-reverse lg:flex-row lg:justify-around items-start my-0 md:my-10">
+  <div class="flex lg:w-2/3 flex-col-reverse lg:items-center lg:flex-row lg:justify-around lg:mx-auto items-start my-0 md:my-10">
     <Bio/>
-    <div class="bg-[url(./assets/bioPhoto.jpg)] w-full h-100 my-10 md:h-200 lg:my-0 lg:h-screen lg:w-5/12 bg-center bg-contain bg-no-repeat"></div>
+    <div class="bg-[url(./assets/bioPhoto.jpg)] object-hidden-up rounded-xl w-full h-100 my-10 md:h-200 lg:my-0 lg:h-200 lg:w-5/12 bg-center bg-cover bg-no-repeat border-white border"
+    use:inViewport></div>
   </div>
 
   <div class="w-screen h-auto">
