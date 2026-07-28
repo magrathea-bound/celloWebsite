@@ -2,6 +2,7 @@
 import {slide} from 'svelte/transition'
 import { onMount } from 'svelte';
 import { inViewport } from "./ViewPortAppear"
+import ExpandingText from './ExpandingText.svelte';
 
 let expanded: boolean = $state(false);
 let visible_count: number = $state(0);
@@ -113,6 +114,7 @@ const paragraphs = [
     School circa 1880.`
     ]
 
+let p_quant = [2,2,3];
 function update() {
     // Desktop
     if (window.innerWidth >= 1024) {
@@ -132,24 +134,9 @@ onMount(() =>{
 </script>
 
 <div class="lg:w-6/12 bg-tertiary text-white rounded-4xl p-4 items-center flex flex-col transition-all duration-500 ease-in-out">
-  <div class="space-y-5 my-5">
+  <div class="flex flex-col justify-center items-center space-y-5 my-5">
     <h1 class="text-white font-secondary text-7xl text-center p-2 underline align-middle">Bio</h1>
 
-    {#each paragraphs.slice(0, visible_count) as paragraph}
-        <p use:inViewport class="object-hidden-up">{paragraph}</p>
-    {/each}
-    
-    {#if expanded}
-      <div transition:slide={{ duration:1000, axis:'y'}} class="space-y-5">
-    {#each paragraphs.slice(visible_count) as paragraph}
-      <p use:inViewport class="object-hidden-up">{paragraph}</p>
-    {/each}
-      </div>
-    {/if}
+<ExpandingText paragraphs={paragraphs} p_quant={p_quant}/>
   </div>
-
-  <button onclick={()=> expanded = !expanded } 
-    class="py-3 px-6 bg-secondary rounded-2xl text-lg">
-    {expanded ? 'Read Less' : 'Read More'}
-  </button>
 </div>

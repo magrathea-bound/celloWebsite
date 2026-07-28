@@ -11,11 +11,8 @@ import CelloEye from "/src/assets/celloEye.png"
 import Email from "/src/assets/envelope.svg"
 import FB from "/src/assets/facebook.svg"
 import LinkedIn from "/src/assets/linkedin.svg"
-import Spotify from "/src/assets/spotify.svg"
-import Itunes from "/src/assets/itunes-brands-solid.svg"
-import Amazon from "/src/assets/amazon-music-svgrepo-com.svg"
-import Pandora from "/src/assets/pandora-svgrepo-com.svg"
 import { inViewport } from "./lib/ViewPortAppear"
+import ListenBanner from "./lib/ListenBanner.svelte"
 </script>
 
 <NotesParticles/>
@@ -24,13 +21,13 @@ import { inViewport } from "./lib/ViewPortAppear"
   <ParallaxImage/>
   <HeaderBanner>About Dr. Kralik</HeaderBanner>
 
-  <div class="flex lg:w-2/3 flex-col-reverse lg:items-center lg:flex-row lg:justify-around lg:mx-auto items-start my-0 md:my-10">
+  <div class="flex lg:w-4/5 flex-col-reverse lg:items-center lg:flex-row lg:justify-around lg:mx-auto items-start my-0 md:my-10">
     <Bio/>
-    <div class="bg-[url(./assets/bioPhoto.jpg)] object-hidden-up rounded-xl w-full h-100 my-10 md:h-200 lg:my-0 lg:h-200 lg:w-5/12 bg-center bg-cover bg-no-repeat border-white border"
+    <div class="bg-[url(./assets/bioPhoto.jpg)] object-hidden-up rounded-xl w-full h-100 my-10 md:h-200 lg:my-0 lg:h-200 lg:w-5/12 bg-top lg:bg-center bg-cover bg-no-repeat border-white border"
     use:inViewport></div>
   </div>
 
-  <div class="w-screen h-auto">
+  <div class="w-screen h-auto my-20">
     <img src={Recording} alt="Christine recording" class="w-screen">
   </div>
 
@@ -51,6 +48,7 @@ import { inViewport } from "./lib/ViewPortAppear"
     <AlbumCarousel/>
   </div>
 
+<ListenBanner/>
   <HeaderBanner>Contact</HeaderBanner>
 
   <div class="w-screen h-5/12 overflow-hidden relative">
@@ -73,25 +71,6 @@ import { inViewport } from "./lib/ViewPortAppear"
     </div>
   </div>
 
-  <div class="md:fixed md:right-0 md:top-1/4 flex md:flex-col items-center space-y-3 w-full md:w-1/10">
-    <h1 class="font-secondary text-white text-4xl underline mb-5">Listen</h1>
-<a href="https://open.spotify.com/artist/4lJ0leiTzz8GPbevDUCvwU?si=SdIezAiVQyyQ2UwqHOM-6Q" target="_blank"
-class="w-full mx-auto flex justify-center">
-<img src={Spotify} alt="Spotify Icon" class="w-1/3">
-</a>
-<a href="https://music.apple.com/us/artist/christine-kralik/1724566551" target="_blank"
-class="flex mx-auto justify-center w-full">
-<img src={Itunes} alt="Itunes Icon" class="w-1/3">
-</a>
-<a href="https://music.amazon.com/artists/B0CPPRW7ZP/christine-kralik?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_U2fyPqQ8ilgK6JoIzZno2eBB2" 
-target="_blank" class="flex mx-auto justify-center w-full">
-<img src={Amazon} alt="Amazon Music Icon" class="w-1/3">
-</a>
-<a href="https://pandora.app.link/NVQO0gGVw2b" target="_blank"
-class="flex mx-auto justify-center w-full">
-<img src={Pandora} alt="Pandora Icon" class="w-1/3">
-</a>
-  </div>
 
 </main>
 
